@@ -5,4 +5,6 @@ export default [
     index("routes/public/home.tsx"),
     route("login", "routes/public/login.tsx"),
     route("about", "routes/public/about.tsx"),
+    route("construccion", "routes/public/construccion.tsx"),
+    route("*", "routes/public/NotFound.tsx"),
 ];

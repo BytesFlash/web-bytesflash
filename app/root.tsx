@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 import Navbar from "./component/navbar";
 import { AuthProvider } from "./context/authContext";
 
@@ -33,6 +35,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <title>Bytesflash</title>
+        <link rel="icon" type="image/png" href="logo/logo-bg.png" />
       </head>
       <body>
         {children}
@@ -44,6 +48,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    });
+  }, []);
+
   return (
     <AuthProvider>
       <div>
