@@ -78,7 +78,7 @@ const Navbar = () => {
                     {token ? (
                         <button className="btn btn-sm btn-error" onClick={handleLogout}>Salir</button>
                     ) : (
-                        <a href="/login" className="btn btn-sm text-white bg-[#2563eb] hover:bg-[#1e40af] border-none flex items-center gap-2">
+                        <a href="/construccion" className="btn btn-sm text-white bg-[#2563eb] hover:bg-[#1e40af] border-none flex items-center gap-2">
                             <FaUser /> Comenzar
                         </a>
                     )}
@@ -116,7 +116,7 @@ const Navbar = () => {
                     {token ? (
                         <button className="btn btn-error w-full" onClick={handleLogout}>Cerrar sesión</button>
                     ) : (
-                        <a href="/login" className="btn btn-primary w-full">Comenzar</a>
+                        <a href="/construccion" className="btn btn-primary w-full">Comenzar</a>
                     )}
                 </div>
             </div>
