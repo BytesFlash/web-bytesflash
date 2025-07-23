@@ -19,6 +19,7 @@
     "react-router": "^7.3.0"
   },
   "devDependencies": {
+    "@netlify/remix-adapter": "^2.6.1",
     "@react-router/dev": "^7.3.0",
     "@tailwindcss/vite": "^4.0.13",
     "@types/aos": "^3.0.7",
