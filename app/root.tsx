@@ -11,7 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
-import Navbar from "./component/navbar";
+import Navbar from "./components/navbar";
 import { AuthProvider } from "./context/authContext";
 
 export const links: Route.LinksFunction = () => [
@@ -27,6 +27,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -36,7 +37,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
         <title>Bytesflash</title>
-        <link rel="icon" type="image/png" href="logo/logo-bg.png" />
+        <link rel="icon" type="image/png" href="/logo/logo-bg.png?v=2" />
+
       </head>
       <body>
         {children}

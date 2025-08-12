@@ -48,8 +48,9 @@ const Navbar = () => {
                                 marginBottom: "-1rem", // y por abajo, sin agrandar el navbar
                             }}
                         >
+
                             <img
-                                src="logo/logo-bg.png"
+                                src="/logo/logo-bg.png?v=2"
                                 alt="Logo Bytesflash"
                                 className="w-full h-full rounded-full bg-white object-contain shadow-lg"
                                 style={{
@@ -62,7 +63,7 @@ const Navbar = () => {
 
                 {/* Menú horizontal para desktop */}
                 <div className="hidden lg:flex gap-8 text-sm font-medium text-white/90 navbar-center">
-                    <a href="/construccion" className="flex items-center gap-2"><FaLayerGroup /> Contenido</a>
+                    <a href="/contenido" className="flex items-center gap-2"><FaLayerGroup /> Contenido</a>
                     <a href="/construccion" className="flex items-center gap-2"><FaBookOpen /> Asesorías</a>
                     <a href="/construccion" className="flex items-center gap-2"><FaCrown /> PRO</a>
                     <a href="/construccion" className="flex items-center gap-2"><FaShareAlt /> Redes</a>
@@ -107,9 +108,9 @@ const Navbar = () => {
                     </button>
                 </div>
                 <ul className="flex flex-col gap-6 px-6 py-4 text-white text-md">
-                    <li><a href="/construccion" className="flex items-center gap-3"><FaLayerGroup /> Contenido</a></li>
+                    <li><a href="/construcion" className="flex items-center gap-3"><FaLayerGroup /> Contenido</a></li>
                     <li><a href="/construccion" className="flex items-center gap-3"><FaBookOpen /> Asesorías</a></li>
-                    <li><a href="/construccion" className="flex items-center gap-3"><FaCrown /> PRO</a></li>
+                    <li><a href="/construccion" className="flex items-center gap-3"><FaCrown /> Servicios</a></li>
                     <li><a href="/construccion" className="flex items-center gap-3"><FaShareAlt /> Redes</a></li>
                 </ul>
                 <div className="mt-auto px-6 py-4">
